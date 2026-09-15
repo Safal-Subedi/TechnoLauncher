@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="faviocn/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <title>Techno Launcher - Features</title>
+    <style>
+        body {
+            background: black;
+            color: #fff;
+            font-family: 'Poppins', sans-serif;
+            padding-top: 100px;
+            margin: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px;
+            background: #111;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            border: 1px solid #222;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-align: center;
+            background: linear-gradient(45deg, #065f06, #10d910);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+        }
+        p.subtitle {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #ccc;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .feature-card {
+            background: #181818;
+            border: 1px solid transparent;
+            border-radius: 8px;
+            padding: 25px;
+            transition: transform 0.5s ease, border-color 0.5s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-15px);
+            border-color: #10d910;
+        }
+        .feature-card h3 {
+            color: #10d910;
+            margin-bottom: 12px;
+            font-size: 1.2em;
+        }
+        .feature-card p {
+            color: #aaa;
+            font-size: 0.95em;
+            line-height: 1.5;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="page-features">
+        <a href="index.html">About</a>
+        <a href="download.html">Download</a>
+        <a href="features.html">Features</a>
+        <a href="faq.html">FAQ</a>
+        <a href="guide.html">Guide</a>
+        <span></span>
+    </nav>
+
+    <div class="container">
+        <h1>Powerful Features</h1>
+        <p class="subtitle">Discover what makes Techno Launcher a good launcher.</p>
+        
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>Free To Install</h3>
+                <p>No money needed to install <strong>Techno Launcher</strong></p>
+            </div>
+            <div class="feature-card">
+                <h3>In-built mod and version manager.</h3>
+                <p>No need to copy and paste the worlds or mods through any file manager, Just click on import mod/worlds. Also can download just by typing name of the mod.</p>
+            </div>
+            <div class="feature-card">
+                <h3>No Login Required</h3>
+                <p>You don't have to login with your microsoft account or other accounts, Just type username. Because it is a crakced launcher.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Theme Switcher</h3>
+                <p>Choose your launcher theme either dark, light or system default.</p>
+            </div>
+        </div>
+
+        <div style="margin-top: 40px;">
+            <h2 style="color: #10d910; font-size: 1.5em; margin-bottom: 20px; text-align: center;">Advantages & Disadvantages</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+                <div style="background: #181818; padding: 20px; border-radius: 8px; border-left: 4px solid #10d910; border-top: 1px solid #2a2a2a; border-right: 1px solid #2a2a2a; border-bottom: 1px solid #2a2a2a;">
+                    <h3 style="color: #fff; margin-bottom: 12px; font-size: 1.1em;">Advantages</h3>
+                    <ul style="color: #aaa; padding-left: 18px; line-height: 1.6; font-size: 0.95em;">
+                        <li>In-Built mod manager</li>
+                        <li>Easy to use interface</li>
+                        <li>In-Built backup-wolrds <section></section></li>
+                        <li>In-Built version installer</li>
+                        <li>Easy and fast to update minecraft version</li>
+                    </ul>
+                </div>
+                <div style="background: #181818; padding: 20px; border-radius: 8px; border-left: 4px solid #ff4444; border-top: 1px solid #2a2a2a; border-right: 1px solid #2a2a2a; border-bottom: 1px solid #2a2a2a;">
+                    <h3 style="color: #fff; margin-bottom: 12px; font-size: 1.1em;">Disadvantages</h3>
+                    <ul style="color: #aaa; padding-left: 18px; line-height: 1.6; font-size: 0.95em;">
+                        <li>Requires Java runtime pre-installed</li>
+                        <li>Currently exclusive to Windows 10/11</li>
+                        <li>Resets mods keybinds after launching vanilla then mod loader</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
