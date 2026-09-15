@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <title>Techno Launcher - FAQ</title>
+</head>
+<style>
+        body {
+            background: black;
+            color: #fff;
+            font-family: 'Poppins', sans-serif;
+            padding-top: 100px;
+            margin: 0;
+        }
+        .container {
+            max-width: 75%;
+            margin: auto;
+            padding: 40px;
+            background: #111;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            border: 1px solid #222;
+        }
+        .container > p,
+        .container > h1{
+            letter-spacing: 3px;
+        }
+        .question {
+            background-color: #111;
+            color: rgba(255, 255, 255, 0.8);
+            cursor: pointer;
+            width: 100%;
+            font-size: 1.2rem;
+            padding: 2rem 2.5rem;
+            border: none;
+            outline: none;
+            transition: 0.4s;
+            justify-content: space-between;
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+        }
+        .question i{
+            font-size: 1.6rem;
+        }
+        .active,
+        .question:hover{
+            background-color: #000;
+        }
+        .pannel p{
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 1.2rem;
+            line-height: 1.4;
+        }
+        .pannel{
+            padding: 0 2rem 2.5rem;
+            background-color: #111;
+            overflow: hidden;
+            display: none;
+        }
+        .faq{
+            border: 1px solid rgba(255,255,255,0.2);
+            margin: 10px 0;
+        }
+        .faq:active{
+            border: none;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-align: center;
+            background: linear-gradient(45deg, #065f06, #10d910);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+        }
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+</style>
+<body>
+    <nav class="page-faq">
+        <a href="../">About</a>
+        <a href="/download/">Download</a>
+        <a href="/features/">Features</a>
+        <a href="/">FAQ</a>
+        <a href="/guide/">Guide</a>
+        <span></span>
+    </nav>
+    <div class="container">
+        <h1>Frequently Asked Questions</h1>
+        <div class="faq">
+            <button class="question">Is Techno Launcher safe to use?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>Yes, Techno Launcher is completely safe to use, it doesn't contain any malware or malicious software.</p>
+            </div>
+        </div>
+        <div class="faq">
+            <button class="question">Is Techno Launcher free to use?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>Yes, Techno Launcher is completely free to use.</p>
+            </div>
+        </div>
+        <div class="faq">
+            <button class="question">What OS does Techno Launcher support?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>Currently, Techno Launcher only supports Windows 10/11. But, on future Techno Launcher will also be available for MacOS/LINUX and other operating systems.</p>
+            </div>
+        </div>
+        <div class="faq">
+            <button class="question">Which Minecraft version does Techno Launcher support?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>Techno launcher supports all modern Minecraft versions including snapshots.</p>
+            </div>
+        </div>
+        <div class="faq">
+            <button class="question">Does Techno Launcher improve FPS?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>No, Techno Launcher isn't made for improving FPS. Though, it gives about same FPS as SKLauncher.</p>
+            </div>
+        </div>
+        <div class="faq">
+            <button class="question">Can I play premium Minecraft through this launcher?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>No, You can only play cracked Minecraft through this launcher.</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var ques = document.getElementsByClassName("question");
+
+    var i;
+    for(i = 0; i < ques.length; i++){
+        ques[i].addEventListener("click", function(){
+            this.classList.toggle("active");
+            this.parentElement.classList.toggle("active");
+
+            var pannel = this.nextElementSibling;
+
+            if(pannel.style.display === "block"){
+                pannel.style.display = "none";
+            } else{
+                pannel.style.display = "block";
+            }
+        });
+    }
+</script>
+</html>
